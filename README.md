@@ -25,13 +25,13 @@ pip install pandas openpyxl pymssql unidecode numpy
 Este proyecto realiza los siguientes pasos:
 
 1. **Extracción de Datos:** Se leen dos archivos Excel con datos de estudiantes.
-2. **Transformación:**
+2. **Transformación Inicial:**
    - Se normalizan los nombres de las columnas eliminando tildes y caracteres especiales.
    - Se unifican las claves para poder fusionar los datos.
    - Se realiza una unión entre ambos DataFrames para completar la información.
 3. **Carga de Datos:**
    - Se conecta con SQL Server.
-   - Se crea la base de datos `Actividades_ETL4` si no existe.
+   - Se crea la base de datos `Actividad_ETL` si no existe.
    - Se crea la tabla `tabla_etl_nueva1` con los datos transformados.
    - Se insertan los registros en la tabla.
    - Se verifican los datos almacenados.
@@ -65,6 +65,3 @@ python etl_script.py
 
 Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
-## Contacto
-
-Si tienes preguntas o sugerencias, contáctame en [tu correo electrónico].
